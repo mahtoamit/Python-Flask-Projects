@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Passenger Update Form - SkyLine Train </title>
+    <!--External CSS-->
+    <link href="static/css/style.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">      <img src="static/images/Trainlogo.png"  width="60" height="50" alt="logo"></img>
+      Add Passenger Form</div>
+    <div class="content">
+      <form action="/passengeradd" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your Name" id="pname" name="pname"  required>
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="text" placeholder="Enter your Age" id="age" name="age"  required>
+          </div>
+          <div class="input-box">
+            <span class="details">Train Number</span>
+            <input type="text" placeholder="Enter Train Number" id="ptrainno" name="ptrainno" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Train Name</span>
+            <input type="text" placeholder="Enter Train Name " id="trainname" name="ptrainname" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Class</span>
+            <input type="text" placeholder="Enter Class" id="pclass" name="pclass"  required>
+          </div>
+          <div class="input-box">
+            <span class="details">Source</span>
+            <input type="text" placeholder="Enter Source" id="psource" name="psource"  required>
+          </div>
+          <div class="input-box">
+            <span class="details">Destination</span>
+            <input type="text" placeholder="Enter Destination" id="pdest" name="pdest" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Fare</span>
+            <input type="text" placeholder="Enter Fare" id="pamt" name="pamt" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Status</span>
+            <input type="text" placeholder="Enter Ticket Staus" id="pstatus" name="pstatus" required>
+          </div>
+          <div class="input-box">
+            <span class="details">DOJ</span>
+            <input type="date" placeholder="Enter Date of Journey" id="pdoj" name="pdoj" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Add">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

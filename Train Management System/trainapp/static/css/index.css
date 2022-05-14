@@ -1,0 +1,249 @@
+.navbar {
+    /*whichever you want*/
+    background-color: #E9C92D;
+    /*0.5 determines transparency value*/
+    opacity: 0.7;
+    font-weight: bold;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /*Background-color*/
+  .bg-color {
+    background: linear-gradient(136deg, rgb(68, 132, 206), rgb(85, 190, 178), rgb(255, 31, 98), rgb(155, 89, 182), #F08080, rgb(236, 240, 241)) 0% 0% / 1200% 1200%;
+    background-size: 200% 200%;
+    animation: gradient 17s ease-in-out infinite;
+    display: inline-block;
+    height: 700px;
+  }
+  
+  /*Background-color-animation*/
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .heading {
+    margin-top: 120px;
+    font-family: sans-serif;
+  }
+  
+  .heading2 {
+    margin-bottom: 50px;
+  }
+  
+  .social-icons {
+    color: #fff;
+  }
+  
+  .social-icons:hover {
+    color: #000;
+  }
+  
+  .typewriter {
+    /* Ensures the content is not revealed until the animation */
+    overflow: hidden;
+    /* Ensures the content stays on same line */
+    white-space: nowrap;
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 8s steps(30, end)
+  }
+  
+/* login  CODE */
+
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  
+}
+
+
+  /* The typing effect */
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+      width: 100%
+    }
+  }
+  
+  .about-me {
+    margin-top: 10px
+  }
+  
+  /*Profile pic border*/
+  
+  .profile {
+    margin-top: 50px;
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+  }
+  
+  /*About Me*/
+  .about-section {
+    background-color: #E8E8E8;
+  }
+  
+  .para-me {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    word-break: break-all;
+  }
+  
+  .title {
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Verdana;
+    margin-top: 8px;
+  }
+  
+
+  /*Media queries for responsive design*/
+  
+  @media screen and (min-width: 280px) {
+    .heading {
+      font-size: 55px;
+    }
+  }
+  
+  @media screen and (min-width: 320px) {
+    .heading {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (min-width: 300px) {
+    .heading {
+      font-size: 45px;
+    }
+  }
+  
+  @media screen and (min-width: 350px) {
+    .heading {
+      font-size: 60px;
+    }
+  }
+  
+  @media screen and (min-width: 370px) {
+    .heading {
+      font-size: 65px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .heading {
+      font-size: 90px;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .heading {
+      font-size: 90px;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .heading {
+      font-size: 95px;
+      margin-top: 150px;
+    }
+  }
+  
+  @media screen and (min-width: 200px) {
+    .heading2 {
+      font-size: 9px;
+    }
+  }
+  
+  @media screen and (min-width: 320px) {
+    .heading2 {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 410px) {
+    .heading2 {
+      font-size: 13px;
+    }
+  }
+  
+  @media screen and (min-width: 601px) {
+    .heading2 {
+      font-size: 24px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 601px) {
+    .heading2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .img-container {
+      float: left;
+      width: 33.33%;
+      padding: 20px;
+    }
+    .certificates::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+  
+  @media screen and (min-width: 200px) {
+    .technical-tab, .soft-tab {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .technical-tab, .soft-tab {
+      font-size: 20px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 200px) {
+    .bg-color {
+      background: linear-gradient(136deg, rgb(68, 132, 206), rgb(85, 190, 178), rgb(255, 31, 98), rgb(155, 89, 182), #F08080, rgb(236, 240, 241)) 0% 0% / 1200% 1200%;
+      background-size: 400% 180%;
+      animation: gradient 10s ease-in-out infinite;
+  
+  
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .bg-color {
+      background: linear-gradient(136deg, rgb(68, 132, 206), rgb(85, 190, 178), rgb(255, 31, 98), rgb(155, 89, 182), #F08080, rgb(236, 240, 241)) 0% 0% / 1200% 1200%;
+      background-size: 600% 600%;
+      animation: gradient 17s ease-in-out infinite;
+  
+  
+    }
+  }
+  
+  
+  
+  

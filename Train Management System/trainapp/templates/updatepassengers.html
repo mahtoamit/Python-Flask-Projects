@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      <!--Fancybox CSS-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+      <!--External CSS-->
+      <link href="static/css/style.css" rel="stylesheet">
+    
+      <!--Font Awesome CSS-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--Google Fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    
+      <title>SkyLine Train</title>
+      <!-- add icon link -->
+      <link rel="icon" href="static/images/Trainlogo.png" type="image/x-icon">
+  </head>
+<body>
+  <div class="container">
+    <div class="title"><img src="static/images/Trainlogo.png"  width="60" height="50" alt="logo"></img>
+      Update Passenger Form
+    </div>
+      <div class="content">
+        <form action="/passengerupdate/{{passenger[0]}}" method="post">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your Name" id="pname" name="pname" value="{{passenger[1]}}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Age</span>
+              <input type="text" placeholder="Enter your Age" id="age" name="age" value="{{passenger[2]}}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Train Number</span>
+              <input type="text" placeholder="Enter Train Number" id="ptrainno" name="ptrainno" value="{{passenger[3]}}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Train Name</span>
+              <input type="text" placeholder="Enter Train Name " id="trainname" name="ptrainname" value="{{passenger[4]}}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Class</span>
+              <input type="text" placeholder="Enter Class" id="pclass" name="pclass"  value="{{passenger[5]}}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Source</span>
+              <input type="text" placeholder="Enter Source" id="psource" name="psource" value="{{passenger[6]}}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Destination</span>
+              <input type="text" placeholder="Enter Destination" id="pdest" name="pdest" value="{{passenger[7]}}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Fare</span>
+              <input type="text" placeholder="Enter Fare" id="pamt" name="pamt" value="{{passenger[8]}}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Status</span>
+              <input type="text" placeholder="Enter Ticket Staus" id="pstatus" name="pstatus" value="{{passenger[9]}}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">DOJ</span>
+              <input type="text" placeholder="Enter Date of Journey" id="pdoj" name="pdoj" value="{{passenger[10]}}" required>
+            </div>
+          </div>
+            <div class="button">
+              <input type="submit" value="Add">
+            </div>
+        </form>
+      </div>
+  </div>
+
+
+
+   <!--jQuery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+     integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+     crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+     integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+     crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   
+   <script>
+ 
+     //Smooth scroll
+     $("a.scrollink").click(function (event) {
+       event.preventDefault();
+       $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 800);
+     });
+ 
+     //Image animation on-click
+     $('.effect').fancybox(
+       {
+         animationDuration: 350,
+         animationEffect: 'slide-in-out',
+       });
+ 
+     //Image animation on click
+     $('.effects').fancybox(
+       {
+         nextEffect: 'fade',
+         prevEffect: 'fade',
+         animationDuration: 350,
+         animationEffect: 'slide-in-out',
+       });
+ 
+   </script>
+</body>
+</html>
